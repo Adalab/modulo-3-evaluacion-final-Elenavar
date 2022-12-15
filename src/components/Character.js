@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Character(props) {
   return (
-    <li className="character">
+    <li key={props.character.id} className="character">
       <Link className="character__link" to={`character/${props.character.id}`}>
         <img
           className="character__link--img"
